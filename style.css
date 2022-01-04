@@ -102,6 +102,17 @@ body {
     padding-top: 50px;
     width: 1430px;
     padding-left: 50px;
+   
+}
+.events a {
+    opacity: 0.9;
+    transition: 0.3s linear;
+}
+.events a:hover{
+    opacity: 100;
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 10px;
+    border-radius: 12px;
 }
 
 .case {
@@ -164,16 +175,11 @@ body {
 .contactss ul li a{
     text-decoration: none;
     color: white;
-    transition: all 0.3s ease;
+    transition: 0.3s linear;
     opacity: 0.75;
 }
 .contactss ul li a:hover {
     color: white;
-    padding-left: 7px;
+    padding-left: 8px;
     opacity: 100;
 }
-
-/*<h1>Adelshiyev Syrym - 211153@astanait.edu.kz</h1>
-                    <h1>Aysultan Zhaksytaev - 211695@astanait.edu.kz</h1>
-                    <h1>Erasyl Serikov - 211525@astanait.edu.kz</h1>
-                    <h1>Sultan Serik - 211666@astanait.edu.kz</h1>*/

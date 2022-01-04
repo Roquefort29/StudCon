@@ -131,6 +131,7 @@ body {
     box-sizing: border-box;
     text-transform: uppercase;
 }
+
 .sport {
     margin-left: 50px;
     display: inline-block;
@@ -142,18 +143,37 @@ body {
 
     transition: color 0.2s linear;
 }
+
 .contactss {
     max-width: 17000px;
-    margin: 0px 30px;
-    padding: 25px;
-    background: #d0f3ec;
-    border: 1px solid #095747;
-    color: #000000;
-    box-sizing: border-box;
+    color: #ffffff;
     text-transform: uppercase;
-}
-.social-icons {
+    background: black;
+    margin: -22px -30px;
+    margin-left: -58px;
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    width: 50;
-    height: 50;
-    }
+}
+.contactss ul li {
+    list-style-type: none;
+}
+.contactss ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    opacity: 0.75;
+}
+.contactss ul li a:hover {
+    color: white;
+    padding-left: 7px;
+    opacity: 100;
+}
+
+/*<h1>Adelshiyev Syrym - 211153@astanait.edu.kz</h1>
+                    <h1>Aysultan Zhaksytaev - 211695@astanait.edu.kz</h1>
+                    <h1>Erasyl Serikov - 211525@astanait.edu.kz</h1>
+                    <h1>Sultan Serik - 211666@astanait.edu.kz</h1>*/

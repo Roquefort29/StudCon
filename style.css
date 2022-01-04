@@ -142,13 +142,13 @@ body {
 
     transition: color 0.2s linear;
 }
-.contacts_block {
+.contactss {
     max-width: 17000px;
     margin: 0px 30px;
     padding: 25px;
-    background: #000000;
-    border: 1px solid #000000;
-    color: #ffffff;
+    background: #d0f3ec;
+    border: 1px solid #095747;
+    color: #000000;
     box-sizing: border-box;
     text-transform: uppercase;
 }

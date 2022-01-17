@@ -9,13 +9,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <div class="intro">
                 <div class="root">
-                <h1 class="intro_title" id="intro-block">Student Organization</h1>
+                <h1 class="intro_title" id="intro-block">Студенттер ұйымы</h1>
         </div>
         </div>
     <header id="header" class="fixed-top">
@@ -28,27 +28,28 @@
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav mr-auto mb-3 mb-lg-0">
                     <li class="navbar-item">
-                        <a href="#intro-block" class="nav-link">Main</a>
-                    </li>                   
-                     <li class="navbar-item">
-                        <a href="#about-block" class="nav-link">About</a>
+                        <a href="#intro-block" class="nav-link">Басты бет</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#galery-block" class="nav-link">Galery</a>
+                        <a href="#about-block" class="nav-link">Біз туралы</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#event-block" class="nav-link">Events</a>
+                        <a href="#galery-block" class="nav-link">Галерея</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#contacts-block" class="nav-link">Contacts</a>
+                        <a href="#event-block" class="nav-link"> Іс-шаралар</a>
                     </li>
-                    <a class="nav-link" style="text-decoration: none; color: white;" href="kaz.html" >ҚАЗ</a>
-                    <a class="nav-link" style="text-decoration: none; color: white;" href="rus.html">РУС</a>
-                    <a class="nav-link" style="text-decoration: none; color: white;" href="index.html">ENG</a>
+                    
+                    <li class="navbar-item">
+                        <a href="#contacts-block" class="nav-link">Байланыс</a>
+                    </li>
+                        <a class="nav-link" style="text-decoration: none; color: white;" href="kaz.html" >ҚАЗ</a>
+                        <a class="nav-link" style="text-decoration: none; color: white;" href="rus.html">РУС</a>
+                        <a class="nav-link" style="text-decoration: none; color: white;" href="index.html">ENG</a>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <button class="btn btn-outline-success" style="color: white;" data-toggle="modal" data-target="#exampleModal">Sign in</button>
-                    <button class="btn btn-outline-danger ml-3" style="color: white;">Sign out<output></output></button>
+                    <button class="btn btn-outline-success" style="color: white;" data-toggle="modal" data-target="#exampleModal">Кіру</button>
+                    <button class="btn btn-outline-danger ml-3" style="color: white;">Шығу<output></output></button>
                 </ul>
             </div>
         </div>
@@ -58,37 +59,38 @@
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+
+<h5 class="modal-title" id="exampleModalLabel">Форма</h5>
                 <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
             </div>
             <div class="modal-body">
                 <form action="action_page.php">
                     <div class="container">
-                      <h1>Register</h1>
-                      <p>Please fill in this form to create an account.</p>
+                      <h1>Тіркелу</h1>
+                      <p>Жаңа аккаунт ашу үшін осы форманы толтырыңыз</p>
                       <hr>
                   
                       <label for="email"><b>Email</b></label>
-                      <input type="text" placeholder="Enter Email" name="email" required>
-
-<label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <input type="text" placeholder="Email-ды еңгізіңіз" name="email" required>
                   
-                      <label for="psw-repeat"><b>Repeat Password</b></label>
-                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      <label for="psw"><b>Құпия сөз</b></label>
+                      <input type="password" placeholder="Құпия сөзді еңгізіңіз" name="psw" required>
+                  
+                      <label for="psw-repeat"><b>Құпия сөзді қайталаңыз</b></label>
+                      <input type="password" placeholder="Құпия сөзді қайталаңыз" name="psw-repeat" required>
                       <hr>
                   
-                      <button type="submit" class="registerbtn">Register</button>
+                      <button type="submit" class="registerbtn">Тіркелу</button>
                     </div>
                   
                     <div class="container signin">
-                      <p>Already have an account? <a href="#main_block">Sign in</a>.</p>
+                      <p>Сіз тіркелгенсіз бе? <a href="#main_block">Кіру</a>.</p>
                     </div>
                   </form>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button class="btn btn-secondary">Save changes</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Жабу</button>
+                <button class="btn btn-secondary">Өзгертулерді сақтау</button>
             </div>
         </div>
     </div>
@@ -126,33 +128,36 @@
             <div id="event-block" class="events">
             <h1 ><b>Events:</b></h1>
                <h2>SPORT: </h2> 
-                <h3><i>1)Table Tennis</i></h3>
-                <p><h3>Friday: 
+                <h3><i>1)Үстел теннисі</i></h3>
+                <p><h3>Жұма: 
                 15:00, C1.2 section</h3></p>
                 <img style="width: 600px;" src="table_tennis.png" alt="Table Tennis">
-                <p><h3>Organization: "Lycos Aitu"</h3></p>
+                <p><h3>Ұйымдастырушы: "Lycos Aitu"</h3></p>
                 <p><h3>Instagram:</p><a button type="button" class="btn btn-light" href="https://www.instagram.com/lycos_aitu/">@lycos_aitu</a></h3>
                 <hr>
-                <h3><i>2)Football</i></h3>
-                <p><h3>Sunday:
-                12:00, near B. Momyshuly park</h3></p>
+                <h3><i>2)Футбол</i></h3>
+                <p><h3>Жексенбі:
+                12:00, B. Бауыржан Момышұлы паркі</h3></p>
                 <img style="width: 600px;" src="football.jpg" alt="Football">
-                <p><h3>Organization: "AITU Football"</h3></p>
-                <p><h3>Instagram:</p><a button type="button" class="btn btn-light" href="https://www.instagram.com/aitu_football/">@aitu_football</a></h3>
+                <p><h3>Ұйымдастырушы: "AITU Football"</h3></p>
 
-<hr>
-                <h2 style="text-transform: uppercase;">Discussion hour:</h2>
-               <p><h3> Monday - Friday: 
+
+<p><h3>Instagram:</p><a button type="button" class="btn btn-light" href="https://www.instagram.com/aitu_football/">@aitu_football</a></h3>
+                
+
+                <hr>
+                <h2 style="text-transform: uppercase;">Талқылау сағаты:</h2>
+               <p><h3> Дүйсенбі - Жұма: 
                 12:00 - 13:00, 
                 Open Space </h3></p>
                 <img style="width: 600px;" src="Библиоотека_Astana_IT_University.jpg" alt="">
-                <p><h3>Organization: "Student Organization"</h3></p>
+                <p><h3>Ұйымдастырушы: "Student Organization"</h3></p>
                 
                 <hr>
-                <h2 style="text-transform: uppercase;">Movies evening:</h2>
-                <p><h3>Every second Saturday 17:00 Conference rooms</h3></p>
+                <h2 style="text-transform: uppercase;">Кешкі фильм:</h2>
+                <p><h3>Әр екінші сенбі 17:00 Конференц залы</h3></p>
                 <img style="width: 600px; height: 350px;" src="DSC04920-500x400.jpg" alt="">
-                <p><b><h3>Organization: "AITU volunteers"</p></h3></b>
+                <p><b><h3>Ұйымдастырушы: "AITU volunteers"</p></h3></b>
                 <p><h3>Instagram:</h3></p><b><h3><a button type="button" class="btn btn-light" href="https://www.instagram.com/aitu_volunteers/">@aitu_volunteers</a></b></h3>
                 <hr>
                 <br>
@@ -161,11 +166,11 @@
                     <img style="width: 237px; height: 118px; position:absolute; float: right; " src="aitu-logo_white.png" alt="">
                     <div class="contact-text">
                         <ul class="contact_text">
-                            <li><h2>CONTACTS:</h2></li>
-                        <li><a href="https://mail.google.com/mail/u/0/#search/syrymik4%40gmail.com?compose=new">Syrym Adelshiev</a></li>
-                        <li><a href="https://mail.google.com/mail/u/0/#search/engineerisme0134%40gmail.com?compose=new">Sultan Serik</a></li>
-                        <li><a href="https://mail.google.com/mail/u/0/#search/zhaksytayev%40gmail.com?compose=new">Aisultan Zhaksytayev</a></li>
-                        <li><a href="https://mail.google.com/mail/u/0/#search/nurbekordabek7%40gmail.com?compose=new">Yerasyl Serikov</a></li> 
+                            <li><h2>БАЙЛАНЫС:</h2></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#search/syrymik4%40gmail.com?compose=new">Сырым Адельшиев</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#search/engineerisme0134%40gmail.com?compose=new">Сүлтан Серік</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#search/zhaksytayev%40gmail.com?compose=new">Айсұлтан Жақсытаев</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#search/nurbekordabek7%40gmail.com?compose=new">Ерасыл Сериков</a></li> 
                                
                     </ul>
                 </div>
@@ -182,9 +187,9 @@
              <br>
         <blockquote class="bloquote">
             <ul>
-        <li><h5>Our organization consists of senior students who want to help to freshmen in their university life.</h5></li>
-        <li><h5>We want to help freshmen spiritually and seek answers to their questions together.</h5></li>
-        <li><h5>Our mission is the moral support of freshmen and their full immersion in academic activities.</h5></li>
+        <li><h5>Біздің ұйым Университет өмірінде бірінші курс студенттеріне көмектескісі келетін жоғары курс студенттерінен тұрады.</h5></li>
+        <li><h5>Біз бірінші курс студенттеріне рухани тұрғыдан көмектесіп, олардың сұрақтарына бірге жауап іздегіміз келеді.</h5></li>
+        <li><h5>Біздің миссиямыз-бірінші курс студенттерін моральдық қолдау және олардың оқу іс-әрекетіне толықтай ену.</h5></li>
     </ul>
  </blockquote>
  

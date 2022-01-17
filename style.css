@@ -1,185 +1,186 @@
-body {
-    background-image: url('bg_student21.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-}
-.container{
-    width: 1000%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.header{
-    position:absolute;
+ 
+    body {
+        background-image: url('bg_student21.jpg'); /*phon*/
+        background-size: cover; /*размер фона*/
+        background-repeat: no-repeat; /*повторность фона*/
+        background-color: rgb(255, 255, 255);/*цвет заднего плана*/
+    }
+    .container{
+        width: 1000%; /*ширина*/
+        max-width: 1200px; /*максимальная ширина*/
+        margin: 0 auto; /*отступ по вертикали | по горизонтали */
+    }
     
-    padding-top: 0px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.intro_title {
-    font-size: 60px;
-    font-weight: 700; 
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    padding-top: 20%;
-    text-align: center;
- }
-
-.header_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding: 15px;
-
-}
-
-.header_logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(255, 254, 254);
-    font: optional;
-}
-
-.nav {
-    display: flex;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.nav_link {
-    margin-left: 50px;
-    display: inline-block;
-    vertical-align: top;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    position: relative;
-    opacity: 0.75;
-
-    transition: color 0.2s linear;
-}
-.nav_link:first-child {
-    margin-left: 0;
-}
-
-.nav_link:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    display: none;
-
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    transition: color 0.1s linear;
-}
-
-.nav_link:hover {
-    color: rgb(255, 255, 255);
-    transition: color 0.2s;
-    opacity: 1;
-    transition: opacity 0.2s linear;
-}
-
-.nav_link:hover:after {
-    display: block;
-    color:rgb(255, 255, 255);
-    transition: color 0.2s linear;
-}
-
-.events {
-    position: absolute;
-    padding-top: 50px;
-    width: 1430px;
-    padding-left: 50px;
-   
-}
-.events a {
-    opacity: 0.9;
-    transition: 0.3s linear;
-}
-.events a:hover{
-    opacity: 100;
-    background-color: rgba(0, 0, 0, 0.116);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-.case {
-    position: absolute;
-    padding-top: 650px;
-    max-width: 20000px;
-}
-.cont_ab {
-    position: absolute;
-    padding-top: 600px;
-}
-
-.aboutt {
-    position: absolute;
-    padding-top: 450px;
-    width: 1500px;
-    height: 250px;
-}
-
-.bloquote {
-    max-width: 17000px;
-    margin: 0px 30px;
-    padding: 25px;
-    background: #f8fffe;
-    border: 1px solid #b0d2cb;
-    color: #0b4237;
-    box-sizing: border-box;
-    text-transform: uppercase;
-}
-
-.sport {
-    margin-left: 50px;
-    display: inline-block;
-    vertical-align: top;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: relative;
-    opacity: 0.75;
-
-    transition: color 0.2s linear;
-}
-
-.contactss {
-    max-width: 17000px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: black;
-    margin: -22px -30px;
-    margin-left: -58px;
+    .header{
+        position:absolute; /*Абсолютно позиционируемый элемент*/
+        
+        padding-top: 0px; /*задает высоту области заполнения в верхней части элемента.*/
+        width: 100%; /*ширина*/
+        top: 0; /*определении вертикального положения позиционируемого элемента. Тоже самое что и margin*/
+        left: 0;
+        right: 0;
+    }
     
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.contactss ul li {
-    list-style-type: none;
-}
-.contactss ul li a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s linear;
-    opacity: 0.75;
-}
-.contactss ul li a:hover {
-    color: white;
-    padding-left: 8px;
-    opacity: 100;
-}
+    .intro_title {
+        font-size: 60px; /*размер шрифта*/
+        font-weight: 700; /*толщина шрифта*/
+        text-transform: uppercase; /*трансформация текста*/
+        color: white;
+        position: relative; /*Элемент позиционируется в соответствии с нормальным потоком документа, а затем смещается относительно самого себя на основе значений сверху, справа, снизу и слева.*/
+        padding-top: 20%; 
+        text-align: center; /*выравнивание текста*/
+     }
+    
+    .header_menu{
+        display: flex; /*устанавливает внутренний и внешний типы отображения элемента.*/
+        /*при объявлении display: flex, определены в спецификации гибкой блочной модели CSS.*/
+        justify-content: space-between; /*распределяет пространство между элементами контента и вокруг них вдоль основной оси*/
+        align-items: center; /*выравнивание предметов*/
+        border-bottom: 1px solid rgb(255, 255, 255);/*устанавливает нижнюю границу элемента*/
+        padding: 15px; /*область отступа сразу со всех четырех сторон элемента.*/
+    
+    }
+    
+    .header_logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(255, 254, 254);
+        font: optional; /*шрифт*/
+    }
+    
+    .nav {
+        display: flex;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .nav_link {
+        margin-left: 50px; /*отступ с левой стороны*/
+        display: inline-block;
+        vertical-align: top; /*Выравнивает верхнюю часть элемента и его потомков по верхней части всей строки.*/
+        color: rgb(255, 255, 255);
+        text-decoration: none;/*декорация текста*/
+        position: relative;
+    
+        transition: color 100s linear;/*скорость осветления кнопки при наведения мышки*/
+    }
+    .nav_link:first-child {
+        margin-left: 0;
+    }
+    
+    .nav_link:after {
+        content: ""; /*При применении к псевдоэлементу псевдоэлемент не генерируется. Применительно к элементу значение не имеет никакого эффекта.*/
+        display: block; /*Элемент генерирует поле блочного элемента, генерируя разрывы строк как до, так и после элемента в обычном потоке.*/
+        width: 100%;
+        height: 3px; /*рост*/
+        display: none;
+    
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1; /*задает z-порядок позиционируемого элемента и его потомков или гибких элементов.*/
+        transition: color 0.1s linear;
+    }
+    
+    .nav_link:hover {
+        color: rgb(255, 255, 255);
+        transition: color 0.2s;
+        opacity: 1;
+        transition: opacity 0.2s linear;
+    }
+    
+    .nav_link:hover:after {
+        display: block;
+        color:rgb(255, 255, 255);
+        transition: color 0.2s linear;
+    }
+    
+    .events {
+        position: absolute;
+        padding-top: 150px;
+        width: 1430px;
+        padding-left: 50px;
+       
+    }
+    .events a {
+        opacity: 0.9;
+        transition: 0.3s linear;
+    }
+    .events a:hover{
+        opacity: 100;
+        background-color: rgba(0, 0, 0, 0.116);
+        padding: 10px;
+        border-radius: 12px; /*радиус границ*/
+    }
+    
+    .case {
+        position: absolute;
+        padding-top: 650px;
+        max-width: 20000px;
+    }
+    .cont_ab {
+        position: absolute;
+        padding-top: 600px;
+    }
+    
+    .aboutt {
+        position: absolute;
+        padding-top: 450px;
+        width: 1500px;
+        height: 250px;
+    }
+    
+    .bloquote {
+        max-width: 17000px;
+        margin: 0px 30px;
+        padding: 25px;
+        background: #f8fffe;
+        border: 1px solid #b0d2cb;
+        color: #0b4237;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    
+    .sport {
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        position: relative;
+        opacity: 0.75;
+    
+        transition: color 0.2s linear;
+    }
+    
+    .contactss {
+        max-width: 20000px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background: black;
+        margin: -22px -30px;
+        margin-left: -58px;
+        
+        list-style-type: none; /*задает маркер (например, диск, символ или пользовательский стиль счетчика) элемента элемента списка.*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .contactss ul li {
+        list-style-type: none;
+    }
+    .contactss ul li a{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s linear;
+        opacity: 0.75;
+    }
+    .contactss ul li a:hover {
+        color: white;
+        padding-left: 8px;
+        opacity: 100;
+    }
+ 
